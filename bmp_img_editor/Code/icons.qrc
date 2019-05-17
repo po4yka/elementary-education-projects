@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>icons/change.png</file>
+        <file>icons/copy.png</file>
+        <file>icons/delete.png</file>
+        <file>icons/home.png</file>
+        <file>icons/image_file.png</file>
+        <file>icons/inf.png</file>
+        <file>icons/open_folder.png</file>
+        <file>icons/reflection.png</file>
+        <file>icons/save.png</file>
+        <file>icons/setup.png</file>
+        <file>icons/split.png</file>
+        <file>icons/exit.png</file>
+        <file>icons/about_qt.png</file>
+        <file>icons/rectangle.png</file>
+        <file>icons/collage.png</file>
+        <file>icons/line.png</file>
+        <file>icons/black_and_white.png</file>
+        <file>icons/creator.png</file>
+        <file>icons/rotate.png</file>
+        <file>icons/fill.png</file>
+        <file>icons/circle.png</file>
+    </qresource>
+</RCC>
