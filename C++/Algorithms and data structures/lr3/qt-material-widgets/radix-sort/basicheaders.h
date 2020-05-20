@@ -1,0 +1,55 @@
+#ifndef BASICHEADERS_H
+#define BASICHEADERS_H
+
+#include <iostream>
+#include <vector>
+#include <map>
+#include <fstream>
+#include <algorithm>
+#include <memory>
+#include <cstdint>
+#include <cstring>
+#include <string>
+#include <cstdlib>
+#include <unistd.h>
+#include <exception>
+#include <stdexcept>
+#include <cstdio>
+#include <cassert>
+#include <regex>
+#include <experimental/filesystem>
+#include <cmath>
+#include <unistd.h>
+#include <iostream>
+#include <algorithm>
+
+#include <QObject>
+#include <QMessageBox>
+#include <QDebug>
+#include <QString>
+#include <QFileDialog>
+#include <QGraphicsItem>
+#include <QtGui>
+#include <QDialog>
+#include <QColorDialog>
+#include <QString>
+#include <QDebug>
+#include <QPainter>
+#include <QComboBox>
+#include <QLabel>
+#include <QPushButton>
+#include <QFile>
+#include <QWidget>
+#include <QVBoxLayout>
+#include <QPushButton>
+#include <QLabel>
+#include <QLineEdit>
+#include <QGroupBox>
+#include <QRadioButton>
+#include <QTextEdit>
+#include <QEventLoop>
+#include <QTimer>
+#include <QColor>
+#include <QDebug>
+
+#endif // BASICHEADERS_H
