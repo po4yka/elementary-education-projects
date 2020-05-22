@@ -1,0 +1,15 @@
+ab
+abab
+0,2
+
+cds
+cdscdscds
+0,3,6
+
+ghp
+cdscdscdsghp
+9
+
+test
+tesr
+-1
