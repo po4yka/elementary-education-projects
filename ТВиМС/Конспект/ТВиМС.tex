@@ -2148,6 +2148,29 @@ p_{\eta} (x) =
 	\]
 	\item Распределение Стьюдента с $n$ степенями свободы:
 	\[ p(x) = \frac{\Gamma \left( \frac{n+1}{n} \right)}{\sqrt{\pi n} \Gamma \left(\frac{n}{2}\right)} \left( 1 +  \frac{x^2}{n} \right)^{-\frac{n+1}{2}} \]
+	\item Говорят, что $\xi$ имеет \textit{гамма-распределение} с параметрами $\alpha > 0, \gamma > 0$, и пишут: $\xi \in \Gamma_{\alpha, \lambda}$, если $\xi$ имеет следующую плотность распределения:
+	\[
+	p_{\xi} (x) =
+	\begin{cases}
+		0, & \text{ если } x \le 0 \\
+		c \cdot x^{\lambda -1} e^{- \alpha x}, & \text{ если} x > 0
+	\end{cases}
+	\]
+	где постоянная $c$ вычисляется из свойства плотности так:
+	\[ 1 = \int\limits_{- \infty}^{\infty} p_{\xi} (x) dx = c \int\limits_{0}^{\infty} x^{\lambda - 1} e^{- \alpha x} dx = \frac{c}{\alpha^{\lambda}} \int\limits_{0}^{\infty} (\alpha x)^{\lambda - 1} e^{- \alpha x} d (\alpha x) = \frac{c}{\alpha^{\lambda}} \Gamma (\lambda), \]
+	откуда $c = \frac{\alpha^{\lambda}}{\Gamma (\lambda)}$. Здесь через $\Gamma (\lambda)$ обозначена гамма-функция Эйлера:
+	\[ \Gamma (\lambda) = \int\limits_{0}^{\infty} x^{\lambda - 1} e^{-x} dx = (\lambda - 1) \Gamma(\lambda - 1) \]
+	\[ \Gamma (k) = (k - 1)! \text{ при целых положительных } k \]
+	\[ \Gamma (1) = 1 \]
+	Показательное распределение — частный случай гамма-распределения: $E_{\alpha} = \Gamma_{\alpha, 1}$.
+	\item Пусть распределение случайной величины $\xi$ задаётся плотностью вероятности $p_{\xi} (x)$, имеющий вид:
+	\[ p_{\xi} (x) = \frac{1}{B(\alpha, \beta)} x^{\alpha - 1} (1 - x)^{\beta - 1}, \]
+	где
+	\begin{itemize}
+		\item $\alpha, \beta$ - произвольные фиксированные параметры, и
+		\item $B(\alpha, \beta) = \int\limits_{0}^{1} x^{\alpha - 1} (1 - x)^{\beta - 1} dx$ - бета-функция.
+	\end{itemize}
+	Тогда случайная величина $\xi$ имеет бета-распределение. Пишут: $\xi \sim B(\alpha, \beta)$.
 	\item Распределение хи-квадрат с $n$ степенями свободы:
 	\[
 	p(x) =
@@ -3027,15 +3050,26 @@ p_{\eta} (x) =
 	\end{corollary}
 	\item \textit{\textbf{Неравенство Чебышева.}} Для произвольной случайной величины $\xi$, имеющей математическое ожидание, справедливо неравенство
 	\[ P( |\xi - E\xi| \ge \epsilon ) \le \frac{D\xi}{\epsilon^2} \]
+	при $D\xi < \infty$ и $\xi > 0$.
+	
 	\begin{proof}
 		Для доказательства достаточно применить неравенство Йенсена к случайной величине $\eta = (\xi - E\xi)^2 \ge 0$.
 	\end{proof}
+	
+	\noindent \textbf{Применение:}
+	
+	\begin{itemize}
+		\item С помощью неравенства Чебышева мы имеем возможность оценивать вероятности различных уклонений $\xi$ (от мат. ожидания), зная лишь $E\xi$ и $D\xi$.
+		\item Из данного нер-ва можно получить так называемый закон больших чисел в форме Чебышева.
+	\end{itemize}
+	
+	\noindent Другая форма записи нер-ва Чебышева (используется реже):
+	
+	\[ g: \mathbb{R}_{+} \to \mathbb{R}_{+} - \text{ неотрицательная, неубывающая функция} \]
+	\[ \text{Случайная величина } \xi : P(\xi > 0) = 1, ~~~~~~ Eg(\xi) < \infty, g(x) > 0, x > 0 \]
+	\[ P (|\xi| > \epsilon) \le \frac{Eg(\xi)}{g(\xi)} \]
+	\[ P( |\xi - E\xi| \ge \epsilon ) \le \frac{D\xi}{\epsilon^2} \]
 \end{enumerate}
-\begin{remark}
-	С помощью неравенства Чебышева мы имеем возможность оценивать вероятности различных уклонений $\xi$, зная лишь $E\xi$ и $D\xi$.
-\end{remark}
-
-В качестве одного из первых применений этого неравенства можно получить так называемый закон больших чисел в форме Чебышева.
 
 \subsection{Закон больших чисел и сходимость по вероятности}
 
@@ -3927,7 +3961,6 @@ p^{*}=
 \end{exmp}
 
 \newpage
-
 
 \begin{thebibliography}{6}
 	\bibitem{Anan}
