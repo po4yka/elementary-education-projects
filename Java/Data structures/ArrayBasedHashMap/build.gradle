@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'junit:junit:+'
+    compile 'com.fasterxml.jackson.core:jackson-databind:+'
+}
+
+task copyToLib(type: Copy) {
+    into "/usr/share/java"
+    from configurations.runtime
+}
