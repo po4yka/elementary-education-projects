@@ -20,17 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43780cf6-ae9c-40a1-bd3e-98f650d49081" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/hexle/hashmap/ArrayBasedMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/hexle/hashmap/ArrayBasedMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/hexle/hashmap/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedListTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +75,8 @@
       <option name="presentableId" value="Default" />
       <updated>1595411717160</updated>
       <workItem from="1595411718632" duration="3255000" />
+      <workItem from="1595422833764" duration="46000" />
+      <workItem from="1595441243348" duration="1916000" />
     </task>
     <servers />
   </component>
@@ -100,6 +93,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
